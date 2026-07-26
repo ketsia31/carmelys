@@ -100,8 +100,8 @@ header.site {
   position: sticky;
   top: 0;
   z-index: 40;
-  background: var(--petrol);
-  border-bottom: 1px solid rgba(251,248,242,0.1);
+  background: var(--ink);
+  border-bottom: 1px solid rgba(251,248,242,0.08);
 }
 .nav {
   display: flex;
@@ -117,9 +117,10 @@ header.site {
   color: var(--paper);
   text-decoration: none;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 10px;
 }
+.logo-mark { height: 46px; width: auto; display: block; }
 .logo span {
   font-family: var(--font-mono);
   font-size: 10.5px;
@@ -298,8 +299,9 @@ section { padding: 96px 0; }
   grid-template-rows: 1fr 1fr;
   gap: 12px;
   height: 380px;
+  overflow: hidden;
 }
-.pmr-photos img { width: 100%; height: 100%; object-fit: cover; border-radius: 2px; }
+.pmr-photos img { width: 100%; height: 100%; min-height: 0; min-width: 0; object-fit: cover; border-radius: 2px; display: block; }
 .pmr-photos .tall { grid-row: 1 / 3; height: 100%; }
 
 /* ---------- réalisations ---------- */
@@ -356,8 +358,22 @@ section { padding: 96px 0; }
   padding: 9px 16px;
   background: var(--sable);
 }
-.trust-rating { display: flex; align-items: center; gap: 8px; font-size: 14px; }
-.trust-rating b { font-family: var(--font-display); font-size: 20px; }
+.trust-review {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--paper);
+  background: var(--petrol);
+  border-radius: 3px;
+  padding: 11px 18px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+.trust-review:hover { background: var(--petrol-deep); }
 
 /* ---------- contact ---------- */
 .contact-inner {
