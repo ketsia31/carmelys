@@ -183,39 +183,39 @@
     </div>
   </section>
 
-  <!-- AVANT / APRES INTERACTIF AVEC BARRE AMOVIBLE -->
+ <!-- AVANT / APRES -->
   <section id="avant-apres" style="background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
     <div class="wrap">
       <div class="section-head">
         <div class="dimline"><span></span><span class="rule"></span><span>Avant / après</span><span class="rule"></span></div>
         <h2>La différence Carmelys, en images.</h2>
-        <p>Faites glisser la barre centrale pour comparer le chantier avant et après intervention.</p>
+        <p>Glissez la barre centrale pour comparer le chantier avant et après intervention.</p>
       </div>
       <div class="ba-grid">
         
         <!-- Projet 1 -->
         <div class="ba-pair">
           <h3>Rénovation de salle de bain</h3>
-          <div class="ba-slider-box">
+          <div class="ba-container" style="--pos: 50%;">
+            <img src="assets/img/baignoire-apres.jpg" alt="Salle de bain après" class="ba-img">
+            <img src="assets/img/baignoire-avant.jpg" alt="Salle de bain avant" class="ba-img ba-before">
+            <div class="ba-handle"></div>
+            <input type="range" min="0" max="100" value="50" class="ba-slider-input" aria-label="Comparer avant et après">
             <span class="ba-badge before">Avant</span>
             <span class="ba-badge after">Après</span>
-            <img src="assets/img/baignoire-apres.jpg" alt="Après" class="ba-img-after">
-            <img src="assets/img/baignoire-avant.jpg" alt="Avant" class="ba-img-before">
-            <div class="ba-divider"></div>
-            <input type="range" min="0" max="100" value="50" class="ba-range-input">
           </div>
         </div>
 
         <!-- Projet 2 -->
         <div class="ba-pair">
-          <h3>Aménagement d'un espace extérieur collectif</h3>
-          <div class="ba-slider-box">
+          <h3>Aménagement d'un espace extérieur</h3>
+          <div class="ba-container" style="--pos: 50%;">
+            <img src="assets/img/parc-apres.jpg" alt="Espace extérieur après" class="ba-img">
+            <img src="assets/img/parc-avant.jpg" alt="Espace extérieur avant" class="ba-img ba-before">
+            <div class="ba-handle"></div>
+            <input type="range" min="0" max="100" value="50" class="ba-slider-input" aria-label="Comparer avant et après">
             <span class="ba-badge before">Avant</span>
             <span class="ba-badge after">Après</span>
-            <img src="assets/img/parc-apres.jpg" alt="Après" class="ba-img-after">
-            <img src="assets/img/parc-avant.jpg" alt="Avant" class="ba-img-before">
-            <div class="ba-divider"></div>
-            <input type="range" min="0" max="100" value="50" class="ba-range-input">
           </div>
         </div>
 
@@ -363,36 +363,36 @@
   </div>
 </footer>
 
-<!-- BANDEAU DÉFILANT FIXE DES PARTENAIRES -->
+<!-- BANDEAU DÉFILANT -->
 <div class="partners-banner">
   <div class="partners-track">
-    <!-- Premier passage -->
-    <img src="assets/img/logos/oph-villeneuve.png" alt="OPH de Villeneuve Saint Georges">
-    <img src="assets/img/logos/valophis.png" alt="Valophis">
-    <img src="assets/img/logos/oph-bobigny.png" alt="OPH de Bobigny">
-    <img src="assets/img/logos/est-ensemble.png" alt="Est Ensemble">
-    <img src="assets/img/logos/soleo.png" alt="Soleo">
-    <img src="assets/img/logos/ortec.png" alt="Ortec">
-    <img src="assets/img/logos/chiv.png" alt="CHIV Villeneuve Saint Georges">
-    <img src="assets/img/logos/century21.png" alt="Century 21">
-    <img src="assets/img/logos/amex-bois.png" alt="Amex Bois">
-    <img src="assets/img/logos/fonciere-sima.png" alt="Foncière Sima">
-    <img src="assets/img/logos/guy-hoquet.png" alt="Agence Guy Hoquet">
-    <img src="assets/img/logos/sgl.png" alt="Agence Internationale SGL">
+    <!-- Passage 1 -->
+    <span class="partner-item"><img src="assets/img/logos/oph-villeneuve.png" alt="OPH de Villeneuve Saint Georges"></span>
+    <span class="partner-item"><img src="assets/img/logos/valophis.png" alt="Valophis"></span>
+    <span class="partner-item"><img src="assets/img/logos/oph-bobigny.png" alt="OPH de Bobigny"></span>
+    <span class="partner-item"><img src="assets/img/logos/est-ensemble.png" alt="Est Ensemble"></span>
+    <span class="partner-item"><img src="assets/img/logos/soleo.png" alt="Soleo"></span>
+    <span class="partner-item"><img src="assets/img/logos/ortec.png" alt="Ortec"></span>
+    <span class="partner-item"><img src="assets/img/logos/chiv.png" alt="CHIV Villeneuve Saint Georges"></span>
+    <span class="partner-item"><img src="assets/img/logos/century21.png" alt="Century 21"></span>
+    <span class="partner-item"><img src="assets/img/logos/amex-bois.png" alt="Amex Bois"></span>
+    <span class="partner-item"><img src="assets/img/logos/fonciere-sima.png" alt="Foncière Sima"></span>
+    <span class="partner-item"><img src="assets/img/logos/guy-hoquet.png" alt="Agence Guy Hoquet"></span>
+    <span class="partner-item"><img src="assets/img/logos/sgl.png" alt="Agence Internationale SGL"></span>
 
-    <!-- Duplication pour boucle infinie -->
-    <img src="assets/img/logos/oph-villeneuve.png" alt="OPH de Villeneuve Saint Georges">
-    <img src="assets/img/logos/valophis.png" alt="Valophis">
-    <img src="assets/img/logos/oph-bobigny.png" alt="OPH de Bobigny">
-    <img src="assets/img/logos/est-ensemble.png" alt="Est Ensemble">
-    <img src="assets/img/logos/soleo.png" alt="Soleo">
-    <img src="assets/img/logos/ortec.png" alt="Ortec">
-    <img src="assets/img/logos/chiv.png" alt="CHIV Villeneuve Saint Georges">
-    <img src="assets/img/logos/century21.png" alt="Century 21">
-    <img src="assets/img/logos/amex-bois.png" alt="Amex Bois">
-    <img src="assets/img/logos/fonciere-sima.png" alt="Foncière Sima">
-    <img src="assets/img/logos/guy-hoquet.png" alt="Agence Guy Hoquet">
-    <img src="assets/img/logos/sgl.png" alt="Agence Internationale SGL">
+    <!-- Passage 2 pour boucle continue -->
+    <span class="partner-item"><img src="assets/img/logos/oph-villeneuve.png" alt="OPH de Villeneuve Saint Georges"></span>
+    <span class="partner-item"><img src="assets/img/logos/valophis.png" alt="Valophis"></span>
+    <span class="partner-item"><img src="assets/img/logos/oph-bobigny.png" alt="OPH de Bobigny"></span>
+    <span class="partner-item"><img src="assets/img/logos/est-ensemble.png" alt="Est Ensemble"></span>
+    <span class="partner-item"><img src="assets/img/logos/soleo.png" alt="Soleo"></span>
+    <span class="partner-item"><img src="assets/img/logos/ortec.png" alt="Ortec"></span>
+    <span class="partner-item"><img src="assets/img/logos/chiv.png" alt="CHIV Villeneuve Saint Georges"></span>
+    <span class="partner-item"><img src="assets/img/logos/century21.png" alt="Century 21"></span>
+    <span class="partner-item"><img src="assets/img/logos/amex-bois.png" alt="Amex Bois"></span>
+    <span class="partner-item"><img src="assets/img/logos/fonciere-sima.png" alt="Foncière Sima"></span>
+    <span class="partner-item"><img src="assets/img/logos/guy-hoquet.png" alt="Agence Guy Hoquet"></span>
+    <span class="partner-item"><img src="assets/img/logos/sgl.png" alt="Agence Internationale SGL"></span>
   </div>
 </div>
 
