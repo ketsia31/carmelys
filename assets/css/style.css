@@ -174,24 +174,22 @@ header.site {
 header.site.menu-open .nav-links.mobile { display: flex; }
 
 /* ---------- hero ---------- */
-.hero {
+   .hero {
   position: relative;
-  background: var(--ink);
-  color: var(--paper);
-  overflow: hidden;
+  /* Dégradé (du beige du site vers un beige plus opaque) + Image de fond */
   background-image: 
     linear-gradient(
       180deg,
-      rgba(245, 242, 235, 0.70) 0%,   /* Beige léger en haut */
-      rgba(245, 242, 235, 0.95) 100%  /* Beige plus opaque en bas */
+      rgba(245, 242, 235, 0.70) 0%,   /* Beige léger en haut (laisse voir l'image) */
+      rgba(245, 242, 235, 0.95) 100%  /* Beige plus opaque en bas pour la transition */
     ),
-    url('../img/fond-hero.jpg'); /* Chemin de ton image */
+    url('../img/fond-hero.jpg'); /* <--- Remplace par le nom de ton fichier image */
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
+}
 .hero-inner {
   padding: 108px 0 92px;
   display: grid;
@@ -243,8 +241,7 @@ header.site.menu-open .nav-links.mobile { display: flex; }
   color: rgba(251,248,242,0.75);
 }
 .hero-strip li { list-style: none; display: flex; gap: 8px; align-items: center; }
-.hero-strip li::before { content: "◆"; color: var(--brass-light); font-size: 8px; 
-}
+.hero-strip li::before { content: "◆"; color: var(--brass-light); font-size: 8px; }
 
 /* ---------- section shell ---------- */
 section { padding: 96px 0; }
