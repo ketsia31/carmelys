@@ -34,6 +34,20 @@ document.addEventListener('DOMContentLoaded', () => {
         beforeImg.style.clipPath = `polygon(0 0, ${val}% 0, ${val}% 100%, 0 100%)`;
         divider.style.left = `${val}%`;
       });
+
+
+      // Déplacement de la barre amovible Avant / Après
+document.addEventListener('DOMContentLoaded', () => {
+  const containers = document.querySelectorAll('.ba-container');
+  containers.forEach(container => {
+    const input = container.querySelector('.ba-slider-input');
+    if (input) {
+      input.addEventListener('input', (e) => {
+        container.style.setProperty('--pos', `${e.target.value}%`);
+      });
+    }
+  });
+});
     }
   });
 });
