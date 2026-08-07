@@ -179,7 +179,7 @@
     </div>
   </section>
 
- <!-- AVANT / APRES -->
+<!-- AVANT / APRES INTERACTIF -->
   <section id="avant-apres" style="background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
     <div class="wrap">
       <div class="section-head">
@@ -196,7 +196,7 @@
             <img src="assets/img/baignoire-apres.jpg" alt="Salle de bain après" class="ba-img">
             <img src="assets/img/baignoire-avant.jpg" alt="Salle de bain avant" class="ba-img ba-before">
             <div class="ba-handle"></div>
-            <input type="range" min="0" max="100" value="50" class="ba-slider-input" aria-label="Comparer avant et après">
+            <input type="range" min="0" max="100" value="50" class="ba-slider-input" oninput="this.parentElement.style.setProperty('--pos', this.value + '%')" aria-label="Comparer avant et après">
             <span class="ba-badge before">Avant</span>
             <span class="ba-badge after">Après</span>
           </div>
@@ -209,7 +209,7 @@
             <img src="assets/img/parc-apres.jpg" alt="Espace extérieur après" class="ba-img">
             <img src="assets/img/parc-avant.jpg" alt="Espace extérieur avant" class="ba-img ba-before">
             <div class="ba-handle"></div>
-            <input type="range" min="0" max="100" value="50" class="ba-slider-input" aria-label="Comparer avant et après">
+            <input type="range" min="0" max="100" value="50" class="ba-slider-input" oninput="this.parentElement.style.setProperty('--pos', this.value + '%')" aria-label="Comparer avant et après">
             <span class="ba-badge before">Avant</span>
             <span class="ba-badge after">Après</span>
           </div>
