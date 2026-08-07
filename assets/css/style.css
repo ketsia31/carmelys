@@ -179,7 +179,7 @@ header.site.menu-open .nav-links.mobile { display: flex; }
   background: var(--ink);
   color: var(--paper);
   overflow: hidden;
-  background-image: url('assets/img/fond-hero.png');
+  background-image: url('../img/fond-hero.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
