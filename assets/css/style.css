@@ -179,12 +179,22 @@ header.site.menu-open .nav-links.mobile { display: flex; }
   background: var(--ink);
   color: var(--paper);
   overflow: hidden;
-  background-image:
-    linear-gradient(180deg, rgba(15,28,34,0.86), rgba(15,28,34,0.97)),
-    repeating-linear-gradient(0deg, rgba(251,248,242,0.05) 0 1px, transparent 1px 64px),
-    repeating-linear-gradient(90deg, rgba(251,248,242,0.05) 0 1px, transparent 1px 64px);
+  background-image: url('../img/fond-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 28, 34, 0.55);
+  z-index: 0;
+  pointer-events: none;
 }
 .hero-inner {
+  position: relative;
+  z-index: 1;
   padding: 108px 0 92px;
   display: grid;
   grid-template-columns: 1.25fr 0.9fr;
