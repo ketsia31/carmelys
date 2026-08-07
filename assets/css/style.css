@@ -174,9 +174,11 @@ header.site {
 header.site.menu-open .nav-links.mobile { display: flex; }
 
 /* ---------- hero ---------- */
-   .hero {
+.hero {
   position: relative;
-  /* Dégradé (du beige du site vers un beige plus opaque) + Image de fond */
+  background: var(--ink);
+  color: var(--paper);
+  overflow: hidden;
   background-image: url('../img/fond-hero.jpg');
   background-size: cover;
   background-position: center;
