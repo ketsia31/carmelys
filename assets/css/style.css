@@ -177,14 +177,7 @@ header.site.menu-open .nav-links.mobile { display: flex; }
    .hero {
   position: relative;
   /* Dégradé (du beige du site vers un beige plus opaque) + Image de fond */
-  background-image: 
-    linear-gradient(
-      180deg,
-      rgba(245, 242, 235, 0.70) 0%,   /* Beige léger en haut (laisse voir l'image) */
-      rgba(245, 242, 235, 0.95) 100%  /* Beige plus opaque en bas pour la transition */
-    ),
-    url('../img/fond-hero.jpg'); /* <--- Remplace par le nom de ton fichier image */
-
+  background-image: url('../img/fond-hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
