@@ -311,7 +311,7 @@ section { padding: 96px 0; }
   gap: 18px;
 }
 .gallery figure { margin: 0; }
-.gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 2px; }
+.gallery img { width: 100%; height: 400px; object-fit: cover; border-radius: 2px; }
 .gallery figcaption {
   font-family: var(--font-mono);
   font-size: 11.5px;
